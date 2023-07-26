@@ -91,8 +91,72 @@ public class InterfaceExample {
 		void hide();
 	}
 
+	interface Moveable {
+		void left();
+
+		void right();
+
+		void up();
+
+		void down();
+	}
+
+	static class E implements Showable, Moveable {
+
+		@Override
+		public void show() {
+			// TODO Auto-generated method stub
+
+		}
+
+		@Override
+		public void hide() {
+			// TODO Auto-generated method stub
+
+		}
+
+		@Override
+		public void left() {
+			// TODO Auto-generated method stub
+
+		}
+
+		@Override
+		public void right() {
+			// TODO Auto-generated method stub
+
+		}
+
+		@Override
+		public void up() {
+			// TODO Auto-generated method stub
+
+		}
+
+		@Override
+		public void down() {
+			// TODO Auto-generated method stub
+
+		}
+
+	}
+
 	public static void main(String[] args) {
 		A a = new A();
+
+		A a1 = new AA();
+		B b1 = new BB();
+
+		Showable s1 = new E();
+		Moveable m1 = new E();
+
+		s1.show();
+		s1.hide();
+
+		m1.left();
+		m1.right();
+		m1.up();
+		m1.down();
 
 	}
 
